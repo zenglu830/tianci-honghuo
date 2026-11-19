@@ -54,6 +54,29 @@
   .model-card h3 { font-size: 17px; color: #14532d; margin-bottom: 6px; }
   .model-card .spec { font-size: 13px; color: #616e7c; line-height: 1.7; }
   table { width: 100%; border-collapse: collapse; background: #fff; font-size: 14px; }
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 16px; border-radius: 8px; }
+  .table-wrap table { min-width: 660px; }
+  .table-wrap td:first-child { font-weight: 600; white-space: nowrap; color: #14532d; }
+  .note-list {
+    background: #fff;
+    border: 1px solid #e4e8ee;
+    border-radius: 8px;
+    padding: 18px 22px;
+    font-size: 14px;
+    color: #52606d;
+  }
+  .note-list li { margin: 7px 0 7px 18px; }
+  .btn {
+    display: inline-block;
+    background: #15803d;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 11px 24px;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-top: 18px;
+  }
+  .btn:hover { background: #14532d; }
   th, td { border: 1px solid #e4e8ee; padding: 12px; text-align: left; }
   th { background: #f0f4f8; font-weight: 600; }
   footer {
@@ -109,6 +132,36 @@
         </p>
       </div>
     </div>
+  </section>
+
+  <section>
+    <h2>租赁套餐</h2>
+    <div class="table-wrap">
+      <table>
+        <tr>
+          <th>套餐</th><th>月租金(元)</th><th>黑白含印量(张)</th><th>黑白超量(元/张)</th><th>彩色含印量(张)</th><th>彩色超量(元/张)</th><th>押金(元)</th>
+        </tr>
+        <tr><td>套餐一</td><td>0（纯按张）</td><td>0</td><td>0.055</td><td>0</td><td>0.55</td><td>4000 + 预付金 4000</td></tr>
+        <tr><td>套餐二</td><td>200</td><td>3000</td><td>0.05</td><td>0</td><td>0.5</td><td>4000</td></tr>
+        <tr><td>套餐三</td><td>350</td><td>5500</td><td>0.045</td><td>0</td><td>0.45</td><td>4000</td></tr>
+        <tr><td>套餐四</td><td>500</td><td>9000</td><td>0.04</td><td>0</td><td>0.4</td><td>4000</td></tr>
+        <tr><td>套餐五</td><td>800</td><td>16000</td><td>0.04</td><td>0</td><td>0.4</td><td>6000</td></tr>
+        <tr><td>套餐六</td><td>1200</td><td>25000</td><td>0.038</td><td>500</td><td>0.38</td><td>6000</td></tr>
+        <tr><td>套餐七</td><td>2000</td><td>50000</td><td>0.035</td><td>0</td><td>0.35</td><td>6000</td></tr>
+      </table>
+    </div>
+
+    <ul class="note-list">
+      <li>所有套餐均含复印、打印、扫描功能；幅面 A4、A3 按 2 张 A4 计费。</li>
+      <li><strong>套餐一</strong>：押金 4000 元 + 预付金 4000 元（预付金可抵扣抄表费），合同须签 3 年，满 5 年赠送机器（平均每月需满 300 元）；若连续 6 个月平均抄表费超过 500 元/月，黑白降至 0.045 元/张、彩色 0.45 元/张。</li>
+      <li><strong>套餐四</strong>：租满五年机器免费赠送，无任何附加条件，并全额无息退还押金。</li>
+      <li><strong>套餐五</strong>：租满四年机器免费赠送，无任何附加条件，并全额无息退还押金。</li>
+      <li><strong>套餐六</strong>：租满三年机器免费赠送，并免费维修一年（配件另算），无任何附加条件，并全额退还押金。</li>
+      <li><strong>套餐七</strong>：租满三年机器免费赠送，并免费维修二年（配件另算），所有耗材配件 8 折优惠，无任何附加条件，并全额退还押金。</li>
+      <li>印量更大的阶梯报价与完整条款，请查看下方套餐文件。</li>
+    </ul>
+
+    <a class="btn" href="docs/rental-plans.pdf" target="_blank" rel="noopener">查看完整套餐 PDF</a>
   </section>
 
   <section>
