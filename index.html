@@ -37,6 +37,22 @@
   }
   .card h3 { font-size: 16px; margin-bottom: 8px; color: #102a43; }
   .card p { font-size: 14px; color: #616e7c; }
+  .model-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .model-card {
+    background: #fff;
+    border: 1px solid #e4e8ee;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .model-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin-bottom: 14px;
+  }
+  .model-card h3 { font-size: 17px; color: #14532d; margin-bottom: 6px; }
+  .model-card .spec { font-size: 13px; color: #616e7c; line-height: 1.7; }
   table { width: 100%; border-collapse: collapse; background: #fff; font-size: 14px; }
   th, td { border: 1px solid #e4e8ee; padding: 12px; text-align: left; }
   th { background: #f0f4f8; font-weight: 600; }
@@ -66,6 +82,32 @@
       <div class="card"><h3>耗材供应</h3><p>碳粉、硒鼓、纸张按需配送，不占用资金。</p></div>
       <div class="card"><h3>上门维护</h3><p>故障响应、定期保养、设备巡检全部包含。</p></div>
       <div class="card"><h3>灵活扩容</h3><p>业务增长随时加设备，缩减也不浪费。</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>在租机型</h2>
+    <div class="model-grid">
+      <div class="model-card">
+        <img src="images/canon-c5560.jpg" alt="佳能 C5560 彩色复合机" loading="lazy">
+        <h3>佳能 C5560</h3>
+        <p class="spec">
+          60 页/分钟 · 主机+输稿器+四纸盒<br>
+          自动双面打印 / 双面复印 · 双面彩色扫描 · U盘打印<br>
+          WiFi + 人体感应 · 出厂 AAAAA 级<br>
+          耗材 NPG-71 粉（本店有售）· 机身 620×1198mm
+        </p>
+      </div>
+      <div class="model-card">
+        <img src="images/canon-c3530.jpg" alt="佳能 C3530 彩色复合机" loading="lazy">
+        <h3>佳能 C3530</h3>
+        <p class="spec">
+          30 页/分钟 · 主机+输稿器+两纸盒<br>
+          自动双面打印 / 双面复印 · 双面彩色扫描 · U盘打印<br>
+          WiFi + 人体感应 · 出厂 AAA 级<br>
+          耗材 NPG-67 粉（本店有售）· 纸张 A3/A4/A5
+        </p>
+      </div>
     </div>
   </section>
 
